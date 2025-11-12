@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mejula 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Cinematic Intro Scene -->
+    <div id="introScene" class="intro-scene">
+        <div class="intro-hearts"></div>
+        <div class="intro-content">
+            <h1 class="intro-line" id="introLine1">Hi Mejula 💖</h1>
+            <p class="intro-line" id="introLine2">Alex made something special for you…</p>
+            <button id="beginBtn" class="btn-begin hidden">Click to Begin 💫</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainSite" class="main-site hidden">
+        <!-- Animated Background -->
+        <div class="background-animation">
+            <div class="particles-container"></div>
+            <div class="stars-container"></div>
+        </div>
+
+        <!-- Welcome Section -->
+        <section id="welcome" class="section full-height">
+            <div class="welcome-content">
+                <h1 class="glowing-text">Hey my love 💖</h1>
+                <p class="welcome-message">I made something for you — every pixel, every word, every heartbeat of this page belongs to you.</p>
+                <button id="playMusicBtn" class="btn-primary">
+                    <span>🎵 Play Music</span>
+                </button>
+                <div id="scrollIndicator" class="scroll-indicator hidden">
+                    <span class="scroll-text">Scroll Down</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 Q300,10 600,30 T1200,30" stroke="rgba(255,215,0,0.3)" stroke-width="2" fill="none"/>
+                <path d="M0,35 Q300,45 600,35 T1200,35" stroke="rgba(255,215,0,0.2)" stroke-width="1.5" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- Our Memories Section -->
+        <section id="memory" class="section">
+            <div class="memory-content fade-in-section">
+                <h2 class="section-title">Our Little Universe 🌌</h2>
+                <div class="photo-carousel">
+                    <div class="carousel-container">
+                        <div class="photo-slide active">
+                            <div class="photo-glow"></div>
+                            <img src="ab/IMG-20251107-WA0007.jpg" alt="Our Memory" class="carousel-photo">
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn">❮</button>
+                        <button class="carousel-btn next-btn">❯</button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                    <p class="carousel-caption">This smile still makes my day 💕</p>
+                </div>
+                <p class="photo-caption">Every moment with you is a memory I replay a thousand times.<br>Each photo is a heartbeat I never want to forget. 💞</p>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C200,15 400,45 600,30 C800,15 1000,45 1200,30" stroke="rgba(255,182,193,0.3)" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- Reasons I Love You Section -->
+        <section id="reasons" class="section reasons-enhanced">
+            <h2 class="section-title fade-in-section">Reasons I Love You 💫</h2>
+            <div class="reasons-display fade-in-section">
+                <div class="floating-hearts-bg"></div>
+                <div class="reason-card-dynamic">
+                    <div class="reason-content-wrapper">
+                        <div class="reason-icon-dynamic">💕</div>
+                        <p class="reason-text-dynamic">You're my first crush and my first love</p>
+                        <p class="reason-subtext hidden"></p>
+                    </div>
+                </div>
+                <button id="nextReasonBtn" class="btn-secondary">Next Reason ❤️</button>
+                <div class="reason-progress">
+                    <span class="reason-counter">1 of 20</span>
+                </div>
+                <p id="finalReasonMessage" class="final-reason-message hidden">
+                    That's not all, my love — I'll keep finding new reasons every day 💞
+                </p>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 Q150,20 300,30 T600,30 T900,30 T1200,30" stroke="rgba(255,215,0,0.3)" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- Birthday Message Section -->
+        <section id="birthdayMessage" class="section full-height">
+            <div class="aurora-background"></div>
+            <div class="birthday-content fade-in-section">
+                <div class="sparkle-particles"></div>
+                <h2 class="birthday-title">Happy Birthday, my beautiful Mejula 💫</h2>
+                <div class="birthday-text-container">
+                    <p class="birthday-text">You're my first crush, my first love, and my forever person.</p>
+                    <p class="birthday-text">I'm endlessly grateful for you — for the way you love, care, and understand.</p>
+                    <p class="birthday-text">No matter the miles, you'll always be right here — in me. 💖</p>
+                </div>
+                <a href="alex-message.html" class="btn-secondary" style="margin-top: 40px; display: inline-block; text-decoration: none;">
+                    There's something more I want to tell you 💌
+                </a>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 L1200,30" stroke="rgba(255,182,193,0.3)" stroke-width="1.5" fill="none" stroke-dasharray="5,10"/>
+            </svg>
+        </div>
+
+        <!-- Ask Me Anything Section -->
+        <section id="contact" class="section">
+            <div class="contact-content fade-in-section">
+                <h2 class="section-title">Ask Me Anything 💌</h2>
+                <p class="section-subtitle">Even if it's just to say "I miss you."</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send to Alex 💖</button>
+                </form>
+                <div id="envelopeAnimation" class="envelope-container hidden">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                    </div>
+                </div>
+                <p id="confirmationMessage" class="confirmation hidden">Your words are flying straight to Alex 💌</p>
+            </div>
+        </section>
+
+        <!-- Cinematic Ending -->
+        <section id="cinematicEnding" class="cinematic-ending">
+            <div class="ending-stars"></div>
+            <div class="ending-hearts"></div>
+            <p class="ending-text">This page will always exist —<br>because so will my love for you. 💖</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with all my love,</p>
+            <p class="signature">— Alex 💌</p>
+        </footer>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

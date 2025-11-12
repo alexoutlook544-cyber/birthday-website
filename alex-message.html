@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Message for Mejula 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="message-style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="particles-container"></div>
+        <div class="stars-container"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="message-page">
+        <!-- Header Section -->
+        <section class="message-header fade-in-section">
+            <h1 class="glowing-text">Alex Wants to Let You Know 💌</h1>
+            <p class="message-subtitle">This isn't just a page…<br>It's a piece of my heart written just for you, Mejula.</p>
+        </section>
+
+        <!-- Letter Reveal Button -->
+        <div class="letter-button-container fade-in-section">
+            <button id="revealLetterBtn" class="btn-primary">
+                <span>📖 Read the Letter 💖</span>
+            </button>
+        </div>
+
+        <!-- Love Letter Section -->
+        <section id="loveLetter" class="love-letter-section hidden">
+            <div class="letter-card">
+                <div class="letter-header">
+                    <div class="wax-seal">💌</div>
+                    <div id="musicIndicator" class="music-indicator hidden">
+                        <span class="music-icon">🎵</span>
+                        <span class="music-text">Playing your song...</span>
+                    </div>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-greeting">My dearest Mejula,</p>
+                    <div id="letterText" class="letter-body"></div>
+                    <p class="letter-signature">— Yours always,<br>Alex 💞</p>
+                </div>
+            </div>
+            <!-- Manual play button (fallback for autoplay block) -->
+            <button id="manualPlayBtn" class="manual-play-btn hidden">
+                <span>🎵 Play the music</span>
+            </button>
+        </section>
+
+        <!-- Video Message Section -->
+        <section id="videoSection" class="video-section hidden">
+            <div class="video-intro fade-in-section">
+                <p class="video-intro-text">There's something my heart wants to show you...</p>
+                <button id="playVideoBtn" class="btn-heart">
+                    <span>💞 Click here to watch what my heart wants to say 💞</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Video Lightbox -->
+        <div id="videoLightbox" class="video-lightbox hidden">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-content">
+                <button class="close-lightbox" id="closeLightbox">✕</button>
+                <video id="messageVideo" controls>
+                    <source src="ab/VID-20251107-WA0002.mp4" type="video/mp4">
+                    Your browser doesn't support video playback.
+                </video>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="page-navigation fade-in-section">
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </nav>
+
+        <!-- Footer -->
+        <footer class="message-footer">
+            <p>Made with love that never fades,</p>
+            <p class="signature">— Alex 💌</p>
+        </footer>
+    </main>
+
+    <!-- Audio Elements -->
+    <audio id="letterMusic" loop>
+        <source src="audio2.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="message-script.js"></script>
+</body>
+</html>
